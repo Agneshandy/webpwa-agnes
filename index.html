@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Agnes Shandy - Landing Page</title>
+        <link href="css/style.css" rel="stylesheet" /> <!-- digunakan untuk koneksi dengan file CSS -->
+    </head>
+    <body>
+       <!-- Pembuatan navbar yang dibungkus dengan container sehingga menjadi lebih rapi -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Penggunaan class tersebut agar Navbar menjadi responsive sesuai dengan ukuran Layar -->
+            <div class="container">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="views/about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="views/profile.html">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="views/content.html">Content</a></li>
+                        <li class="nav-item"><a class="nav-link" href="views/form.html">Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="views/cards.html">Items</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      
+    
+       <!-- kemudian dibuatlah container baru yang digunakan untuk menampung konten yang ingin ditampilkan -->
+            <div class="container mt-3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2 class="mb-2">Selamat Datang di Website Saya</h2>
+                        <p>Contoh Slide Show</p>
+                        <!-- membuat container baru yang digunakan untuk menampung slideshow yang akan ditampilkan -->
+                        <div class="slideshow-container">
+                            <!-- Menampilkan gambar pada slide show dengan pengaturan gambar lebar 100% sesuai dengan resolusi gambar yang digunakan-->
+                            <div class="mySlides fade">
+                              <img src="assets/a.png" style="width:100%">
+                              <div class="text">Gambar 1</div>
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              <img src="assets/b.png" style="width:100%">
+                              <div class="text">Gambar 2</div>
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              <img src="assets/c.png" style="width:100%">
+                              <div class="text">Gambar 3</div>
+                            </div>
+                                               
+                          </div>
+                          <br>
+                          
+                          
+                    </div> 
+                </div>
+            </div>
+           
+
+       
+        
+        <!-- Bootstrap core JS yang diambil secara online-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+     
+        <!-- script di bawah digunakan untuk mengatur pergerakan slideshow yang secara otomatis -->
+        <script>
+            let slideIndex = 0; showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                        slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                        slides[slideIndex-1].style.display = "block";
+                        setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Agnes Shandy - About Figma</title>
+    <link href="../css/style.css" rel="stylesheet" /> <!-- digunakan untuk koneksi dengan file CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- digunakan untuk menggaunakan sweetalert2-->
+</head>
+<body>
+   <!-- Pembuatan navbar yang dibungkus dengan container sehingga menjadi lebih rapi -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Penggunaan class tersebut adalah agar Navbar menjadi responsive sesuai dengan ukuran Layar -->
+    <div class="container">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="content.html">Content</a></li>
+                <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
+                <li class="nav-item"><a class="nav-link" href="cards.html">Items</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Kemudian dibuatlah isi konten dengan menggunakan container. Kemudian posisi konten tersebut berada di tengah layar -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <h2>About Figma</h2>
+
+                <p>Figma is a powerful design tool that helps you to create anything: websites, applications, logos, and much more. By learning to use Figma, you'll take your first steps into User Interface Design and and User Experience Design. These skills are essential for building a great portfolio for yourself and potentially for your own company. In this Figma Crash Course, I will use a real project website from Frontend Mentor which we will recreate in Figma. Learning by building a project is a great way to solidify your knowledge, so I recommend downloading the assets and following along.</p>
+                
+                <p>Real-time file collaboration helps mitigate “design drifting”—defined as either misinterpreting or straying from an agreed-upon design. Design drifting usually happens when an idea is conceived and quickly implemented while a project is in progress. Unfortunately, this often leads to deviating from the established design, causing friction and re-work. What is Figma used for? Using Figma, a design lead can check in to see what the team is designing in real time by simply opening a shared file. If a designer somehow misinterprets the brief or user story, this feature allows the design lead to intervene, correct course, and save countless hours that would have otherwise been wasted. (By comparison, teams using Sketch have no immediate way of telling if designers are going astray.)</p>
+
+                
+            </div> 
+            <!-- di bawah ini adalah contoh penggunaan button pada bootstrap. Pada bootstrap sudah disediakan pengaturan tampilan default untuk button -->
+            <div class="btn-group col-lg-9 mt-5" role="group" aria-label="Basic example">
+                <button type="button" id="alert1" class="btn btn-secondary">Definition</button>
+                <button type="button" id="alert2" class="btn btn-secondary">Usage</button>
+                <button type="button" id="alert3" class="btn btn-secondary">Example</button>
+              </div>
+        </div>
+    </div>
+
+
+
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- di bawah ini adalah script yang digunakan untuk memunculkan alert dari sweetalert2
+terdapat beberapa script yang tidak bekerja seperti animasi munculnya alert
+-->
+<script>
+    document.getElementById('alert1').addEventListener('click',function(){
+Swal.fire({
+  title: 'This is the definition of Figma',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+})
+
+document.getElementById('alert2').addEventListener('click',function(){
+Swal.fire({
+  title: 'This is the usage of Figma',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+})
+
+document.getElementById('alert3').addEventListener('click',function(){
+Swal.fire({
+  title: 'This is the example of Figma',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+})
+</script>
+</body>
+</html>

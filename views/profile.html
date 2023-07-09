@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Agnes Shandy - My Profile</title>
+    <link href="../css/style.css" rel="stylesheet" /> <!-- digunakan untuk koneksi dengan file CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- digunakan untuk menggaunakan sweetalert2-->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+</head>
+<body>
+   <!-- Pembuatan navbar yang dibungkus dengan container sehingga menjadi lebih rapi -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Penggunaan class tersebut adalah agar Navbar menjadi responsive sesuai dengan ukuran Layar -->
+    <div class="container">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="profile.html">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="content.html">Content</a></li>
+                <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
+                <li class="nav-item"><a class="nav-link" href="cards.html">Items</a></li>
+               
+                
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Kemudian dibuatlah isi konten dengan menggunakan container. Kemudian posisi konten tersebut berada di tengah layar -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            
+        </div>
+<!-- pada script di bawah digunakan untuk membuat card yang diisi konten berupa profil penulis
+
+script tersebut dibuat menggunakan template yang tersedia gratis pada komunitas bootstrap
+
+card tersebut ditamping pada sebuah container yang telah dibuat-->
+
+        <div class="container mt-5">
+    
+            <!-- penempatan konten tersebut berada pada tengah container sehingga terlihat rebih rapi -->
+            <div class="row d-flex justify-content-center">
+                
+                <div class="col-md-7">
+                    
+                    <div class="card p-3 py-4">
+                        
+                        <!-- script di bawah digunakan untuk membuat foto profil yang berbentuk lingkaran, foto tersebut diambil pada asset yang sudah disiapkan  -->
+                        <div class="text-center">
+                            <img src="../assets/profile.jpg" width="100" class="rounded-circle">
+                        </div>
+                        
+                        <!-- di bawah ini adalah script yang digunakan untuk menampilkan informasi penulis pada bagian card-->
+                        <div class="text-center mt-3">
+                            
+                            <h5 class="mt-2 mb-0">Agnes Belladona Shandy Ayocha</h5>
+                            <span>UI/UX Designer</span>
+                            
+                            <div class="px-4 mt-1">
+                                <p class="fonts">Halo, nama saya Agnes. Saya sangat antusias dalam mempelajari segala hal mengenai UI/UX </p>
+                            
+                            </div>
+                            
+                            <!-- berikut ini adalah icon icon yang digunakan oleh penulis. Icon tersebut diambil dari website font awesome secara gratis -->
+                             <ul class="social-list">
+                                <li><i class="fa fa-facebook"></i></li>
+                                <li><i class="fa fa-instagram"></i></li>
+                                <li><i class="fa fa-linkedin"></i></li>
+                            </ul>
+                            
+                            <div class="buttons">
+                                <button class="btn btn-outline-primary px-4">Message</button>
+                                <button class="btn btn-primary px-4 ms-3">Contact</button>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                       
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
